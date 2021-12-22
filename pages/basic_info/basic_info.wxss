@@ -1,0 +1,74 @@
+/* pages/basic_info/basic_info.wxss */
+
+.imgLayout{
+    width: 200rpx;
+    height: 200rpx;
+    border: auto;
+}
+.img{
+    display: flex;
+    justify-content: center;/*图片居中分布*/
+}
+.img1{
+    margin: 40rpx;
+    display: flex;
+    justify-content: center;/*图片居中分布*/
+}
+.numLayout{
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 60rpx;
+    font-weight: bold;
+
+}
+.textLayout{
+    display: flex;
+    justify-content: center;
+    font-size: 36rpx;
+    font-weight: bold;
+}
+
+.box2{
+    /* border: blue solid ; */
+    /*边框阴影*/
+    border-style: solid;/*边框阴影*/
+    box-shadow:0px 2px 4px 2px #DDDDDD;/*边框阴影*/
+    border-width: 0rpx;/*边框阴影*/
+
+    margin: 25rpx;
+    margin-top: 100rpx;
+    border-radius: 10px;  /*圆弧框 */
+    min-height: 500rpx;
+    height: auto;
+    padding:10rpx;
+}
+.xinxitiao{
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+    margin-top: 50rpx;
+    margin-bottom: 50rpx;
+    border-radius: 10px; 
+    /* border: blue solid ; */
+     /*边框阴影*/
+     border-style: solid;/*边框阴影*/
+     box-shadow:0px 2px 4px 2px #DDDDDD;/*边框阴影*/
+     border-width: 0rpx;/*边框阴影*/
+}
+.texttop{
+    display: flex;
+    margin-left: 10rpx;
+    margin-right: 6rpx;
+    
+}
+.textRight{
+    width: 480rpx;
+    text-align: right;
+    color: red;
+}
+.textbottom{
+    font-size: 25rpx;
+    color: #8a8a8a;
+    margin-left: 10rpx;
+    margin-top: 40rpx;
+}

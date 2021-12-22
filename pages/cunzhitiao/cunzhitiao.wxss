@@ -1,0 +1,96 @@
+/* pages/cunzhitiao/cunzhitiao.wxss */
+page{
+  background-color: #F5F5F5;
+}
+.box1{
+  display: flex;
+  flex-direction: row;
+  height: 250rpx;
+  border: none solid 4rpx;
+  margin: 50rpx;
+  margin-bottom: 10rpx;
+  border-radius: 10px; /* 使框椭圆化 */
+  border-style: solid;/*边框阴影*/
+  box-shadow:0px 2px 4px 2px #DDDDDD;/*边框阴影*/
+  border-width: 0rpx;/*边框阴影*/
+  background-color: white;
+}
+.imgLayout{
+  /* border: none solid 4rpx; */
+  height: 70%;
+  width: 26%;
+  margin: 5% auto;
+  border-radius: 10px; /* 使框椭圆化 */
+}
+.box6{
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.genderLayout{
+  margin: auto;
+}
+
+
+.box2{
+  margin: 50rpx;
+  border-radius: 10px; /* 使框椭圆化 */
+  border-style: solid;/*边框阴影*/
+  box-shadow:0px 2px 4px 2px #DDDDDD;/*边框阴影*/
+  border-width: 0rpx;/*边框阴影*/
+  height: 400rpx;
+  background-color: white;
+  padding-top: 100rpx;
+}
+input{
+  /* border: blue solid 4rpx; */
+  border-radius: 10px; /* 使框椭圆化 */
+  margin: 40rpx 20rpx;
+  height: 80rpx;
+  border-radius: 10px; /* 使框椭圆化 */
+  border-style: solid;/*边框阴影*/
+  box-shadow:0px 2px 4px 2px #DDDDDD;/*边框阴影*/
+  border-width: 0rpx;/*边框阴影*/
+}
+
+.box3{
+  border: solid none 4rpx;
+  display: flex;
+  flex-direction: row;
+  height: 110rpx;
+  width: 100%;
+  border-radius: 10px; /* 使框椭圆化 */
+  border-style: solid;/*边框阴影*/
+  box-shadow:0px 2px 4px 2px #DDDDDD;/*边框阴影*/
+  border-width: 0rpx;/*边框阴影*/
+  background-color: white;
+
+}
+.btnLayout{
+  height: 10rpx;
+  margin: 35rpx auto;
+}
+.box4{/* 底部栏左边按钮 */
+  width: 100rpx;
+  /* border: solid blue 2rpx; */
+  margin-left: 20rpx;
+}
+.box5{/* 底部栏左边按钮 */
+  width: 100rpx;
+  /* border: solid blue 2rpx; */
+  /* margin-left: 40rpx; */
+}
+.imgLayout1{
+  /* background-color: blue; */
+  height: 50rpx;
+  width: 50rpx;
+  margin: 0rpx 25rpx;
+  margin-bottom: 0rpx;
+}
+.textLayout1{
+  padding: 0rpx;
+  /* border: none 1rpx solid; */
+  font-size: small;
+  text-align: center;
+}

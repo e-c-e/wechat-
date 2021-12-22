@@ -1,0 +1,24 @@
+<!--pages/changjianwenti/changjianwenti.wxml-->
+<view class='title'>
+  <text>常见问题</text>
+</view>
+<view class='divLine'></view>
+<view class='normalContent'>
+  <view class='normalContent'>
+    <text>1.本程序全部内容由学生完成，未经严格的开发审查，难免存在一些BUG，请各位用户多多包容。</text>
+  </view>
+  <view class='normalContent'>
+    <text style="font-weight: bold;">2.如果用户对小程序有更好的建议或遇到BUG均可通过底部紫色的的联系客服模块与作者进行联系。</text>
+  </view>
+  <view class='normalContent'>
+    <text>3.本程序创建的实际目的是为了进行一次比较系统的对自己所学知识的复习和拓展。</text>
+  </view>
+  <view class='normalContent'>
+    <text>4.本程序的功能主要是盲盒功能，提交用户信息，然后可以随机提取一定年龄段的信息。</text>
+  </view>
+  <view class='normalContent'>
+    <text>5.作者登录使用的是微信getUserProfile-API接口，保证不会窃取用户个人任何信息</text>
+  </view>
+</view>
+
+

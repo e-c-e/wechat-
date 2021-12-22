@@ -1,0 +1,32 @@
+<!--pages/basic_info/basic_info.wxml-->
+<view class="box1">
+    <view class="img">
+        <image class="imgLayout" src="{{image}}"></image>
+    </view>
+    <view class="numLayout">{{youlizhi}}</view>
+    <view class="textLayout">我的友力</view>
+
+</view>
+
+<view class="box">
+    <view class="box2">
+        <view class="textLayout">友力值增长记录</view>
+        <!-- 为什么用{{chushitai}}不加“!”就不行 -->
+        <block wx:if="{{test}}">
+            <view class="img1">
+                <image bindtap="check" class="imgLayout" src="/images/without_info.png"></image>
+            </view>
+            <view bindtap="check" style="color: #8a8a8a; display: flex;justify-content: center;font-size: 25rpx;">暂时没有自己的专属友力值信息，点击刷新</view>
+        </block>
+        <block wx:else>
+            <view class="xinxitiao" wx:for="{{resdata}}" >
+                <view class="texttop">
+                    <view class="textLeft">增加友力值</view>
+                    <view class="textRight">+{{item.youli}}</view>
+                </view>
+                <view class="textbottom">{{item.date}} {{item.time}}</view>
+            </view>
+        </block>
+
+    </view>
+</view>

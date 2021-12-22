@@ -1,0 +1,28 @@
+<!--pages/cunzhitiao/cunzhitiao.wxml-->
+<form catchsubmit="formSubmit">
+  <view class="box1">
+    <image class="imgLayout" src="{{man_img}}"></image>
+    <image class="imgLayout" src="{{woman_img}}"></image>
+  </view>
+  <radio-group class="box6" name="gender">
+    <radio class="genderLayout" value="male">男</radio>
+    <radio class="genderLayout" value="female">女</radio>
+  </radio-group>
+  <view class="box2">
+      <input style='text-align:center' class="inputtop" maxlength="2" placeholder="请输入您的年龄" type="number" name="age" value="{{age}}"></input>
+      <input style='text-align:center' class="inputbottom" placeholder="请输入您的昵称" name="weixin_num" value="{{weixin_num}}"></input>
+  </view>
+
+  <view class="box3" style="position:fixed; bottom:0;">
+    <navigator class="box4" open-type="switchTab" url="/pages/index/index">
+      <image class="imgLayout1" src="{{image1}}"></image>
+      <view class="textLayout1">首页</view>
+    </navigator>
+    <view class="box5">
+      <image class="imgLayout1" src="{{image2}}"></image>
+      <view class="textLayout1">客服</view>
+    </view>
+    <button class="btnLayout" style="background-color: red;" form-type="submit"></button>
+  </view>
+</form>
+

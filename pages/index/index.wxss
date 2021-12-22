@@ -1,0 +1,158 @@
+/**index.wxss**/
+/* .box{
+  background-color: whitesmoke;
+} */
+page{
+  background-image: url(https://7465-test-3glntmce672dfb0b-1307878423.tcb.qcloud.la/images/%E4%B8%80%E5%85%83%E4%BA%A4%E5%8F%8B/background_img.jpg?sign=17efd6312b0e2bca02d2403a7e2100b3&t=1639923246);
+  background-size:cover;
+}
+
+image{
+  height: 100%;
+  width: 100%;
+
+}
+
+.img2{
+  border-radius: 10px; /* 使图片椭圆化 */
+  height: 100%;
+  width: 100%;
+}
+
+.box1{
+  margin: auto 20rpx;
+  margin-bottom: 40px;
+  height: 195px;
+}
+
+.box2{
+  position: absolute;
+  top: 190px;    /*距离顶部 < 195px + 5rpx    190*/
+  left: 15rpx;  /*funny!!!!如果删去left，此box变成一条线*/
+  right: 15rpx;
+  border: blue dashed 1rpx;
+  height: 60px;      /*设置width可以控制它的宽度，如不设置width宽度自适应*/
+  border-radius: 10px; /* 使框椭圆化 */
+}
+
+.box3{
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 10rpx;
+  height: 350rpx;
+}
+.box4{
+  margin-top: 40rpx;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 40%;
+  height: 270rpx;
+}
+.box5{
+  margin-top: 40rpx;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 40%;
+  height: 270rpx;
+}
+.img1{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px; /* 使图片椭圆化 */
+}
+
+
+
+.box11{
+  border-style: solid;/*边框阴影*/
+  box-shadow:0px 2px 4px 2px #DDDDDD;/*边框阴影*/
+  border-width: 0rpx;/*边框阴影*/
+  border-radius: 10px; /* 使框椭圆化 */
+  background-color: pink;
+  margin: 20rpx;
+  padding: 10rpx;
+  height: 400rpx;
+  border:pink solid 2px;
+}
+.box12{
+  border-style: solid;/*边框阴影*/
+  box-shadow:0px 2px 4px 2px #DDDDDD;/*边框阴影*/
+  border-width: 0rpx;/*边框阴影*/
+  border-radius: 10px; /* 使框椭圆化 */
+  background-color: pink;
+  margin: 20rpx;
+  padding: 10rpx;
+  height: 300rpx;
+  border: pink solid 2px;
+  /* background-image: url(); */
+}
+.qinghuatext{
+  display:flex;/* 伸缩容器*/
+  flex-direction:row;/* 横向排列 */
+  flex-wrap:wrap;/* wrap：flex容器为多行。就是换行的意思*/
+  justify-content:center;/* 居中不留空白*/
+}
+.btnLayout1{
+  display: flex;
+  flex-direction: row;
+}
+.btntext{
+  font-size: 10rpx;
+}
+
+
+/* 播放注意事项轮播图 */
+swiper {
+  height: 100%;/*就很神奇为什么100%和那些宽度有冲突，乱七八糟写多了不行，写少了也不行*/
+  width: 100%;
+}
+.box6{
+  border-style: solid;/*边框阴影*/
+  box-shadow:0px 2px 4px 2px #DDDDDD;/*边框阴影*/
+  border-width: 0rpx;/*边框阴影*/
+  margin: auto 20rpx;
+  display: flex;
+  flex-direction: row;
+  height: 50rpx;
+  position: absolute;
+  top: 205px;    /*距离顶部 < 195px + 5rpx + 190px*/
+  left: 1rpx;  /*funny!!!!如果删去left，此box变成一条线*/
+  right: 1rpx;
+  border: pink solid 1rpx;
+  background-color:  pink; 
+  border-radius: 10px; /* 使框椭圆化 */
+}
+.myleft{
+  height: 50rpx;
+  width: 50rpx;
+  margin-left: 4rpx;
+}
+.myright{
+  /* height: 100%;
+  width: 100%; */
+  text-indent: 5%;
+  font-size: 30rpx;
+  /* width: 600rpx;
+  height: 50rpx; */
+  padding-left: 0rpx;
+}
+
+
+
+.banner{
+  height: 195px;
+}
+image{
+  /* height: 125px; */
+  width: 100%;
+}
+/* .footer-2{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.footer-3{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+} */

@@ -1,0 +1,69 @@
+<!--index.wxml-->
+<view class="box">
+  <view class="box1">
+    <swiper class="banner" indicator-dots='true' indicator-color='#333' indicator-active-color='#f30' autoplay='true' circular="true">
+      <block wx:for="{{img}}">
+              <swiper-item> 
+              <image class="img2" mode="aspectFill" src='{{item}}'></image>
+              </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!-- <view class="box2">
+
+  </view> -->
+
+  <!-- 播放注意事项轮播图 -->
+  <view class="box6">
+      <image src="{{tongzhi}}" class="myleft"></image>
+      <swiper autoplay="ture" vertical="true" circular="true">
+          <block wx:for="{{text_info}}">
+              <swiper-item>
+                  <navigator class="myright">恭喜{{item.username}}成功脱单！！！！</navigator>
+              </swiper-item>
+          </block>
+      </swiper>
+  </view>
+
+
+  
+  <!-- 存取纸条 -->
+  <view class="box3">
+    <!-- 存纸条 -->
+    <view class="box4">
+      <image bindtap="cunzhitiao" class="img1" mode="aspectFill" src="{{cunzhitiao}}">
+      </image>
+    </view>
+    <!-- 取纸条 -->
+    <view class="box5">
+      <image bindtap="quzhitiao" class="img1" mode="aspectFill" src="{{quzhitiao}}">
+      </image>
+    </view>
+  </view>
+
+  <view class="box11">
+    <view class="box12">
+      <text user-select="true" style="color: {{qinghuacolor}};" class="qinghuatext">{{qinghua}}</text>
+    </view>
+    <view class="btnLayout1">
+      <button class="btntext" style="width: 45%;" type ="primary" bindtap="suijiqinghua"></button>
+      <!-- <button class="btntext" style="width: 35%;" type ="primary" bindtap="fuzhiqinghua"></button> -->
+    </view>
+  </view>
+
+<!--测试情话单独按钮复制 <view>{{test}}</view> -->
+  <view class="weui-footer">
+    <view class="footer-2">
+      <view>使用本产品服务，表示您已经同意此</view>
+      <navigator class="lanselianjie" bindtap="tanchuangshengming">《声明》</navigator>
+    </view>
+    <view class="footer-3">
+      <view>pign云服务</view>
+      <!-- <navigator class="lanselianjie" url="/pages/changjianwenti/changjianwenti">用户协议</navigator>
+      <view>、</view>
+      <navigator class="lanselianjie" url="/pages/changjianwenti/changjianwenti">隐私政策</navigator> -->
+    </view>
+  </view>
+
+</view>

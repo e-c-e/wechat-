@@ -1,0 +1,38 @@
+/* pages/changjianwenti/changjianwenti.wxss */
+/* pages/xieyi/xieyi.wxss */
+/* client/pages/text/text.wxss */
+ 
+.title {
+    width: 100%;
+    background: #fff;
+    padding-bottom: 30rpx;
+    font-weight: bold;
+    font-size: large;
+  }
+   
+  .boldContent {
+    width: 100%;
+    background: #fff;
+    padding-bottom: 10rpx;
+    padding-top: 10rpx;
+    font-weight: bolder;
+    font-size: small;
+  }
+   
+  .divLine {
+    background: #e0e3da;
+    width: 100%;
+    /* border: 1px solid rgba(0, 0, 0, .1); */
+    height: 1px;
+  }
+   
+  .normalContent {
+    text-indent: 20rpx;
+    text-align: left;
+    width: 100%;
+    background: #fff;
+    font-size: small;
+    padding-bottom: 10rpx;
+    padding-top: 10rpx;
+    /* border: 1px solid rgba(0, 0, 0, .1); */
+  }

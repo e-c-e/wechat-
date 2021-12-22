@@ -1,0 +1,89 @@
+<!--pages/login-rel/login-rel.wxml-->
+<view class="container">
+  <view class="test1">
+    <block wx:if="{{!hasUserInfo}}">
+      <view wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 
+        <image class="userinfo-avatar" bindtap="bindViewTap" src="{{chushitouxiang}}" mode="cover"></image>
+        <text class="userinfo-nickname">点击登录</text> 
+      </view>
+    </block>
+    <block class="test" wx:else>
+      <image class="userinfo-avatar" bindtap="bindViewTap" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  
+
+  <view class="weui-panel">
+			<view class="weui-panel__bd">
+				<view class="weui-media-box weui-media-box_small-appmsg">
+					<view class="weui-cells">
+						<view class="weui-cell__ft"></view>
+            <navigator aria-labelledby="t1 t2" class="weui-cell weui-cell_active weui-cell_access weui-cell_example" url="/pages/basic_info/basic_info">
+							<view aria-hidden="true" id="t1" class="weui-cell__hd"><image src="{{youli}}" alt></image></view>
+							<view aria-hidden="true" id="t2" class="weui-cell__bd weui-cell_primary">
+								<view>我的友力</view>
+							</view>
+							<view class="weui-cell__ft"></view>
+	        </navigator>
+			<navigator aria-labelledby="t3 t4" class="weui-cell weui-cell_active weui-cell_access weui-cell_example" target="miniProgram"
+				open-type="navigate"
+				app-id="{{ appId }}"
+				extra-data="{{ extraData }}"
+				version="release">
+				<view aria-hidden="true" id="t3" class="weui-cell__hd"><image src="{{canyu}}" alt></image></view>
+				<view aria-hidden="true" id="t4" class="weui-cell__bd weui-cell_primary">
+					<view>社区讨论</view>
+				</view>
+				<view class="weui-cell__ft"></view>
+			</navigator>
+            <navigator aria-labelledby="t3 t4" class="weui-cell weui-cell_active weui-cell_access weui-cell_example" url="/pages/changjianwenti/changjianwenti">
+				<view aria-hidden="true" id="t3" class="weui-cell__hd"><image src="{{wenti}}" alt></image></view>
+				<view aria-hidden="true" id="t4" class="weui-cell__bd weui-cell_primary">
+					<view>常见问题</view>
+				</view>
+				<view class="weui-cell__ft"></view>
+			</navigator>
+            <navigator aria-labelledby="t3 t4" class="weui-cell weui-cell_active weui-cell_access weui-cell_example" url="javascript:">
+							<view aria-hidden="true" id="t3" class="weui-cell__hd"><image src="{{yaoqing}}" alt></image></view>
+							<view aria-hidden="true" id="t4" class="weui-cell__bd weui-cell_primary">
+								<view>邀请好友</view>
+							</view>
+							<button style="width:100%;border: none;position: absolute;" open-type="contact" plain="true" open-type="share"></button>
+							<view class="weui-cell__ft"></view>
+						</navigator>
+            <navigator aria-labelledby="t3 t4" class="weui-cell weui-cell_active weui-cell_access weui-cell_example" url="javascript:">
+							<view aria-hidden="true" id="t3" class="weui-cell__hd"><image src="{{kefu}}" alt></image></view>
+							<view aria-hidden="true" id="t4" class="weui-cell__bd weui-cell_primary">
+								<view>问题反馈</view>
+							</view>
+							<button style="width:100%;border: none;position: absolute;" open-type="contact" plain="true" open-type="feedback"></button><!-- 跳转按钮 -->
+							<view class="weui-cell__ft"></view><!-- 后面的指示标志 -->
+						</navigator>
+            
+					</view>
+				</view>
+			</view>
+		</view>
+
+	<view class="weui-footer">
+	<navigator open-type="switchTab" url="/pages/index/index">
+      <image class="lihe" src="{{lihe}}"></image>
+	</navigator>
+      <view>为创造惊喜而生...</view>
+      <view class="fenge"></view>
+      <view class="footer">
+        <view class="what">
+          <button class="none-btn1" style="text-align: right;margin-right: 0rpx; width: 250rpx;" bindtap="tiaozhuanxieyi" hover-class="btn-hover">
+          使用协议
+          </button>
+          <navigator class="zhongjianfengefu" url="javascript:">|</navigator>
+          <button class="none-btn2" style="text-align: left;margin-left: 0rpx; width: 250rpx;" open-type="contact" session-from="weapp" hover-class="btn-hover">
+          联系客服
+          </button>
+			  </view>
+			  <view class="weui-footer__text">Copyright &copy; 20021-2021 made by pign</view>
+      </view>
+    </view>
+</view>
